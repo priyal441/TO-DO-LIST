@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar Inside the Body -->
+  <div class="navbar">
+    <ul>
+      
+      <li><a href="motivation.html">Motivational Quotes</a></li>
+      <li><a href="Student Growth.html ">Student Growth</a></li>
+    </ul>
+  </div>
+
+  <!-- To-Do List Container -->
+  <div class="todo-container">
+    <h1>My To-Do List</h1>
+
+    <!-- Input Section -->
+    <div class="todo-input-container">
+      <input type="text" id="todo-input" placeholder="Enter a new task..." />
+      <input type="date" id="todo-due-date" />
+      <select id="priority-selector">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <button id="add-btn">Add Task</button>
+    </div>
+
+    <!-- Filters and Clear Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button id="clear-completed">Clear Completed</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
